@@ -52,18 +52,23 @@
     <div class="container">
       <ul class="list-group" id="notice">
         <li class="list-group-item">nohup.out info</li>
-        
+        <script>
+          $(document).ready(function(){
+            $('#test').load('nohup.txt');
+          })
+        </script>
       </ul>
     </div>
 
     <script>
-    var para=document.createElement("li");
-    para.className="list-group-item";
-    var node=document.createTextNode("new line");
-    para.appendChild(node);
+
+      var para=document.createElement("li");
+      para.className="list-group-item";
+      var node=document.createTextNode("new line");
+      para.appendChild(node);
     
-    var element=document.getElementById("notice");
-    element.appendChild(para);
+      var element=document.getElementById("notice");
+      element.appendChild(para);
     </script>
     
 
